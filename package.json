@@ -1,0 +1,26 @@
+{
+  "name": "rockpaperscissors",
+  "version": "1.0.0",
+  "description": "A simple browser version of Rock Paper Scissors.",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abmiram/rockpaperscissors.git",
+    "author": "Ross Birdsall",
+    "license": "ISC"
+  },
+    "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.6.0",
+    "bootstrap": "^4.5.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1"
+  }
+}
