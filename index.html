@@ -8,20 +8,20 @@
     <link type="text/css" rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
     <link type="text/css" rel="stylesheet" href="./css/styles.css" />
 
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
 
     <main class="container mt-5">
         <div class="row text-center">
             <div class="col-sm-4">
-                <a><i class="fa fa-hand-rock fa-lg"></i></a>
+                <a class="choice" id="rock" onclick="getUserChoice(this.id)"><i class="fa fa-hand-rock fa-lg"></i></a>
             </div>
             <div class="col-sm-4">
-                <a><i class="fa fa-hand-paper fa-lg"></i></a>
+                <a class="choice" id="paper" onclick="getUserChoice(this.id)"><i class="fa fa-hand-paper fa-lg"></i></a>
             </div>
             <div class="col-sm-4">
-                <a><i class="fa fa-hand-scissors fa-lg"></i></a>
+                <a class="choice" id="scissors" onclick="getUserChoice(this.id)"><i class="fa fa-hand-scissors fa-lg"></i></a>
             </div>
         </div>
     </main>

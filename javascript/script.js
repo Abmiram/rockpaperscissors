@@ -1,5 +1,5 @@
 const choices = ["rock", "paper", "scissors"];
-let userChoice = "paper";
+let userChoice = "";
 
 let randomChoice = () => {
     let randomNumber = Math.floor(Math.random() * 3);
@@ -18,4 +18,9 @@ const playGame = () => {
     } else {
         console.log("You lose. :(");
     }
+}
+
+const getUserChoice = (selectedIcorn) => {
+    userChoice = `${selectedIcorn}`;
+    playGame();
 }

@@ -4,9 +4,11 @@ a {
     transition-timing-function: ease-out;
     -webkit-transition: linear 0.2s;
     transition: linear 0.2s;
+    color: black;
 }
 
 a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     font-size: 8.5rem;
+    color: rgb(87, 87, 230);
 }
