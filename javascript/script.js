@@ -24,7 +24,7 @@ const playGame = () => {
     }
 }
 
-const getUserChoice = (selectedIcorn) => {
-    userChoice = `${selectedIcorn}`;
+const getUserChoice = (selectedIcon) => {
+    userChoice = `${selectedIcon}`;
     playGame();
 }
