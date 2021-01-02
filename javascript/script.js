@@ -1,4 +1,5 @@
 const choices = ["rock", "paper", "scissors"];
+const message = document.getElementById("gameResults");
 let userChoice = "";
 
 let randomChoice = () => {
@@ -12,10 +13,13 @@ const playGame = () => {
     if (userChoice === "rock" && computerChoice === "scissors"
     || userChoice === "paper" && computerChoice === "rock"
     || userChoice === "scissors" && computerChoice === "paper") {
+        message.innerHTML = `You chose ${userChoice} and the computer chose ${computerChoice}.  You win!`
         console.log("You win!");
     } else if (userChoice === computerChoice) {
+        message.innerHTML = `You chose ${userChoice} and the computer chose ${computerChoice}.  It's a tie.`
         console.log("It's a tie.");
     } else {
+        message.innerHTML = `You chose ${userChoice} and the computer chose ${computerChoice}.  You lose :(`
         console.log("You lose. :(");
     }
 }
