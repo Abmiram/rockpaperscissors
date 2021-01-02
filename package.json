@@ -4,9 +4,13 @@
   "description": "A simple browser version of Rock Paper Scissors.",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "lite": "lite-server",
     "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,13 +19,16 @@
   "author": "Ross Birdsall",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "lite-server": "^2.5.4",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
-    "@popperjs/core": "^2.6.0",
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
-    "sass": "^1.30.0"
+    "popper.js": "^1.16.1"
   }
 }
